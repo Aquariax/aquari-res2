@@ -1,0 +1,48 @@
+.App {
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+	padding: 1rem;
+	background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.8),
+			rgba(255, 255, 255, 0.8)
+		),
+		repeating-linear-gradient(
+			45deg,
+			rgba(100, 100, 100, 0.8) 0%,
+			rgba(219, 226, 224, 0.6) 5%,
+			transparent 2%,
+			transparent 10%,
+			rgba(87, 105, 101, 0.7) 10%,
+			rgba(0, 0, 0, 0.5) 11%,
+			transparent 11%,
+			transparent 13%,
+			rgba(87, 105, 101, 0.7) 12%,
+			rgba(0, 0, 0, 0.5) 13%,
+			transparent 14%,
+			transparent 16%
+		),
+		rgb(255, 255, 255)
+			repeating-linear-gradient(
+				-45deg,
+				rgba(0, 0, 0, 0.5) 0%,
+				rgba(168, 167, 167, 0.5) 5%,
+				rgba(26, 23, 23, 0.5) 7%,
+				transparent 3%,
+				transparent 8%,
+				transparent 9%
+			);
+	&_main {
+		width: 80%;
+	}
+	&_sidebar {
+		width: 20%;
+		padding: 2rem 1rem 1rem;
+		background-color: rgba(20, 228, 255, 0.5);
+		border-radius: 45px 0 10px 10px;
+		ul {
+			list-style-type: circle;
+		}
+	}
+}

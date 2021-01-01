@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Header = () => {
 	return (
-		<Fragment>
+		<div className='header'>
 			<h1 className='name'>Robert C Harris Jr.</h1>
-			<h2 className='title'>Frontend Web Developer</h2>
-		</Fragment>
+			<h3 className='title'>Frontend Web Developer</h3>
+		</div>
 	);
 };
 

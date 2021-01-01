@@ -1,3 +1,9 @@
-* {
-	background-color: red;
-}
+@import 'reset';
+@import 'config';
+@import 'variables';
+@import 'app';
+@import 'header';
+@import 'contact';
+@import 'skills';
+@import 'summary';
+@import 'jobs';

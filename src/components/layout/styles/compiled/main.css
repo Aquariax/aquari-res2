@@ -1,4 +1,299 @@
-* {
-  background-color: red;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.App {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), repeating-linear-gradient(45deg, rgba(100, 100, 100, 0.8) 0%, rgba(219, 226, 224, 0.6) 5%, transparent 2%, transparent 10%, rgba(87, 105, 101, 0.7) 10%, rgba(0, 0, 0, 0.5) 11%, transparent 11%, transparent 13%, rgba(87, 105, 101, 0.7) 12%, rgba(0, 0, 0, 0.5) 13%, transparent 14%, transparent 16%), white repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 0%, rgba(168, 167, 167, 0.5) 5%, rgba(26, 23, 23, 0.5) 7%, transparent 3%, transparent 8%, transparent 9%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), repeating-linear-gradient(45deg, rgba(100, 100, 100, 0.8) 0%, rgba(219, 226, 224, 0.6) 5%, transparent 2%, transparent 10%, rgba(87, 105, 101, 0.7) 10%, rgba(0, 0, 0, 0.5) 11%, transparent 11%, transparent 13%, rgba(87, 105, 101, 0.7) 12%, rgba(0, 0, 0, 0.5) 13%, transparent 14%, transparent 16%), white repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 0%, rgba(168, 167, 167, 0.5) 5%, rgba(26, 23, 23, 0.5) 7%, transparent 3%, transparent 8%, transparent 9%);
+}
+
+.App_main {
+  width: 80%;
+}
+
+.App_sidebar {
+  width: 20%;
+  padding: 2rem 1rem 1rem;
+  background-color: rgba(20, 228, 255, 0.5);
+  border-radius: 45px 0 10px 10px;
+}
+
+.App_sidebar ul {
+  list-style-type: circle;
+}
+
+.header {
+  background-color: rgba(20, 228, 255, 0.5);
+  height: 4rem;
+  border-radius: 0 25px 0 0;
+  padding-left: 1rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_info {
+  font-size: 1.1rem;
+  margin: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_info p {
+  padding: 0.5rem;
+}
+
+.contact_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.25rem;
+}
+
+.contact_social p {
+  padding: 0.5rem;
+}
+
+.skills {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 22%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills h3 {
+  text-decoration: underline;
+}
+
+.skills li {
+  margin: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.skills_key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills_technical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.summary {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.summary p {
+  text-align: justify;
+}
+
+.jobs {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem 0 2rem;
+}
+
+.jobs_title {
+  text-align: center;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@ import React from 'react';
 const Skills = () => {
 	return (
 		<div className='skills'>
+			<h3>Key Skills</h3>
 			<ul className='skills_key'>
 				<li>Web Development and Maintenance</li>
 				<li>Frontend Development</li>
@@ -10,7 +11,7 @@ const Skills = () => {
 				<li>REST API Developement</li>
 				<li>Requirement Gathering</li>
 			</ul>
-
+			<h3>Technical Skills</h3>
 			<ul className='skills_technical'>
 				<li>
 					<span>Database: </span>MONGO DB, MySql, SQLite
@@ -25,7 +26,7 @@ const Skills = () => {
 					<span>Operating Systems: </span>Windows, Linux
 				</li>
 				<li>
-					<span>Other Skills: </span>jQuery, CSS, SASS, AJAX
+					<span>Other Skills: </span>jQuery, CSS, SASS, AJAX, cpanel
 				</li>
 				<li>
 					<span>Package Managers: </span>NPM

@@ -4,14 +4,15 @@ const Contact = () => {
 	return (
 		<div>
 			<div className='contact'>
-				<p>
-					<span>Email: </span>roberthrrsix@gmail.com
-				</p>
-				<p>
-					<span>Phone: </span>(770) 742-6235
-				</p>
-
-				<div className='social'>
+				<div className='contact_info'>
+					<p>
+						<span>Email: </span>roberthrrsix@gmail.com
+					</p>
+					<p>
+						<span>Phone: </span>(770) 742-6235
+					</p>
+				</div>
+				<div className='contact_social'>
 					<p>
 						<span>Github: </span>Aquariax
 					</p>

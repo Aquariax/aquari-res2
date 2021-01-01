@@ -3,14 +3,23 @@ import React from 'react';
 const Summary = () => {
 	return (
 		<div className='summary'>
+			<p>
+				Dynamic and detail-oriented Web Developer with a knack for
+				conceptualizing and delivering elegant, user-friendly solutions
+				effectively and efficiently. Capable of establishing and maintaining
+				good client relationships while delivering exceptional designs. Armed
+				with a desire for learning new technologies and ability to quickly pick
+				up on the new trends and practices in the field.
+			</p>
+
 			<ul>
 				<li>
 					2 Years experience as <span>React JS Developer</span> and
-					<span>Software Developer</span>
+					<span> Software Developer</span>
 				</li>
 				<li>
 					5 years experience developing webpages using
-					<span>HTML/HTML5, SASS, CSS,</span>and <span>Flex</span>
+					<span> HTML/HTML5, Wordpress, SASS, CSS,</span>and <span>Flex</span>
 				</li>
 				<li>
 					Experienced in <span>MERN</span> stack development{' '}
@@ -39,7 +48,8 @@ const Summary = () => {
 					</span>{' '}
 				</li>
 				<li>
-					Familiar with creating Custom Reusable{'React Components Library.'}
+					Familiar with creating Custom Reusable{' '}
+					<span>React Components Library.</span>
 				</li>
 				<li>
 					Experienced in working with Node.JS and NPM modules like{' '}
